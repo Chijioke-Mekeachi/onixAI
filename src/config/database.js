@@ -7,7 +7,7 @@ module.exports = async function connectDatabase() {
   const uri = process.env.MONGODB_URI;
 
   if (!uri) {
-    throw new Error("MONGODB_URI is required");
+    throw new Error("MONGODB_URL is required");
   }
 
   mongoose.set("strictQuery", true);
